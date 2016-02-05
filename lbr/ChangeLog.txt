@@ -1,6 +1,48 @@
 EAGLE Library ChangeLog
 =======================
 
+2015-08-06
+  * led.lbr: Eagle 7.3.3
+    changed addlevel to always:
+    LZ4-00WW10.DEV
+
+2015-07-06
+  * 74xx-little-de.lbr: Eagle 7.3.2
+    added:
+    74*2G79.DEV
+
+2015-07-06
+  * 74xx-little-us.lbr: Eagle 7.3.2
+    added: 74*1G79 from 74xx-little-de.lbr
+
+2015-07-06
+  * 74xx-little-us.lbr: Eagle 7.3.2
+    renamed: 74*1G79 to 74*2G79.DEV
+
+2015-06-16
+  * led.lbr: Eagle 7.3.2
+    added:
+    PC56H19_V0.DEV
+    PC56H19_V0.PAC
+
+2015-06-16
+  * dom-key.lbr: Eagle 7.3.2
+    added:
+    DOM-KEY.DEV
+    FINGERPAD-2A.DEV
+    FINGERPAD-2B.DEV
+    FINGERPAD-3.DEV
+    DOM-KEY.PAC
+    FINGERPAD-2A.PAC
+    FINGERPAD-2B.PAC
+    FINGERPAD-3.PAC
+
+2015-06-15
+  * national-semiconductor.lbr: Eagle 7.3.2
+    corrected:
+    Pin-Pad connection LP2950.DEV Variant D / Z
+    Pad-Name TO252.PAC
+
 2015-03-16
   * toshiba.lbr: Eagle 7.2.10
     added:
@@ -1353,8 +1395,8 @@ EAGLE Library ChangeLog
 2011-05-31
   * inductor-nkl.lbr: Eagle 5.11.1
     renamed packages:
-    B5Ø.PAC to B5O.PAC
-    B6Ø-PAC to B6O.PAC
+    B5Ø.PAC to B50.PAC
+    B6Ø-PAC to B60.PAC
 
 2011-05-26
   * texas.lbr: Eagle 5.11.1

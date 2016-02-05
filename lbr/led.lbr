@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.1">
+<eagle version="7.3.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -42,7 +42,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="5" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="9" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -5587,6 +5587,104 @@ Lumileds 5630 Datasheet DS201 20130228 ©2013 Philips Lumileds Lighting Company.
 <text x="-2.55" y="1.79" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.7" y="-3.15" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="PC56H19_V0">
+<description>&lt;b&gt;Lextar&lt;/b&gt; white SMD LED&lt;p&gt;
+Source: PC56H19_20150317.pdf&lt;br&gt;
+www.lextar.com</description>
+<wire x1="-2.6" y1="1.45" x2="-2.6" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-2.6" y1="-1.45" x2="2.6" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="2.6" y1="-1.45" x2="2.6" y2="1.45" width="0.1" layer="51"/>
+<wire x1="2.6" y1="1.45" x2="-2.6" y2="1.45" width="0.1" layer="51"/>
+<polygon width="0" layer="49">
+<vertex x="0.92" y="0.775"/>
+<vertex x="0.92" y="-0.775"/>
+<vertex x="-1.75" y="-0.775"/>
+<vertex x="-2.075" y="-1"/>
+<vertex x="-2.5" y="-1"/>
+<vertex x="-2.5" y="-1.1"/>
+<vertex x="-2.775" y="-1.1"/>
+<vertex x="-2.775" y="-0.975"/>
+<vertex x="-2.8" y="-0.9"/>
+<vertex x="-2.8" y="-0.4"/>
+<vertex x="-2.775" y="-0.325"/>
+<vertex x="-2.775" y="-0.2"/>
+<vertex x="-2.5" y="-0.2" curve="90"/>
+<vertex x="-2.4" y="-0.3"/>
+<vertex x="-1.3" y="-0.3" curve="90"/>
+<vertex x="-1.2" y="-0.2"/>
+<vertex x="-1.2" y="0.2" curve="90"/>
+<vertex x="-1.3" y="0.3"/>
+<vertex x="-2.4" y="0.3" curve="90"/>
+<vertex x="-2.5" y="0.2"/>
+<vertex x="-2.775" y="0.2"/>
+<vertex x="-2.775" y="0.325"/>
+<vertex x="-2.8" y="0.4"/>
+<vertex x="-2.8" y="0.9"/>
+<vertex x="-2.775" y="0.975"/>
+<vertex x="-2.775" y="1.1"/>
+<vertex x="-2.5" y="1.1"/>
+<vertex x="-2.5" y="1"/>
+<vertex x="-2.075" y="1"/>
+<vertex x="-1.75" y="0.775"/>
+</polygon>
+<smd name="3" x="-2.01" y="-0.645" dx="1.63" dy="0.9" layer="1" stop="no"/>
+<smd name="1" x="-2.01" y="0.65" dx="1.63" dy="0.9" layer="1" stop="no"/>
+<smd name="2" x="2.195" y="0.65" dx="1.73" dy="0.9" layer="1" stop="no"/>
+<smd name="4" x="2.195" y="-0.65" dx="1.73" dy="0.9" layer="1" stop="no"/>
+<polygon width="0" layer="49">
+<vertex x="1.33" y="0.775"/>
+<vertex x="1.33" y="-0.775"/>
+<vertex x="1.75" y="-0.775"/>
+<vertex x="2.075" y="-1"/>
+<vertex x="2.5" y="-1"/>
+<vertex x="2.5" y="-1.1"/>
+<vertex x="2.775" y="-1.1"/>
+<vertex x="2.775" y="-0.975"/>
+<vertex x="2.8" y="-0.9"/>
+<vertex x="2.8" y="-0.4"/>
+<vertex x="2.775" y="-0.325"/>
+<vertex x="2.775" y="-0.2"/>
+<vertex x="2.5" y="-0.2" curve="-90"/>
+<vertex x="2.4" y="-0.3"/>
+<vertex x="2.05" y="-0.3" curve="-90"/>
+<vertex x="1.95" y="-0.2"/>
+<vertex x="1.95" y="0.2" curve="-90"/>
+<vertex x="2.05" y="0.3"/>
+<vertex x="2.4" y="0.3" curve="-90"/>
+<vertex x="2.5" y="0.2"/>
+<vertex x="2.775" y="0.2"/>
+<vertex x="2.775" y="0.325"/>
+<vertex x="2.8" y="0.4"/>
+<vertex x="2.8" y="0.9"/>
+<vertex x="2.775" y="0.975"/>
+<vertex x="2.775" y="1.1"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="2.5" y="1"/>
+<vertex x="2.075" y="1"/>
+<vertex x="1.75" y="0.775"/>
+</polygon>
+<text x="-2.75" y="1.75" size="1.27" layer="25" ratio="6">&gt;NAME</text>
+<text x="-2.75" y="-3" size="1.27" layer="27" ratio="6">&gt;VALUE</text>
+<wire x1="-2.6" y1="-1.45" x2="2.6" y2="-1.45" width="0.1" layer="21"/>
+<wire x1="2.6" y1="1.3" x2="2.6" y2="1.45" width="0.1" layer="21"/>
+<wire x1="2.6" y1="1.45" x2="-2.6" y2="1.45" width="0.1" layer="21"/>
+<wire x1="-2.6" y1="1.45" x2="-2.6" y2="1.3" width="0.1" layer="21"/>
+<wire x1="2.6" y1="-1.45" x2="2.6" y2="-1.3" width="0.1" layer="21"/>
+<polygon width="0.1" layer="21">
+<vertex x="-2.6" y="-1.45"/>
+<vertex x="-2.33" y="-1.45"/>
+<vertex x="-2.6" y="-1.18"/>
+</polygon>
+<rectangle x1="-2.86" y1="-1.125" x2="-1.165" y2="-0.165" layer="29"/>
+<rectangle x1="-2.86" y1="0.175" x2="-1.165" y2="1.125" layer="29"/>
+<rectangle x1="1.3" y1="0.175" x2="3.09" y2="1.125" layer="29"/>
+<rectangle x1="1.3" y1="-1.125" x2="3.09" y2="-0.175" layer="29"/>
+<polygon width="0.1" layer="51">
+<vertex x="-2.6" y="-1.45"/>
+<vertex x="-2.33" y="-1.45"/>
+<vertex x="-2.6" y="-1.18"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -9760,10 +9858,10 @@ Source: http://www.ledengin.com/products/5wLZ/LZ1-00WW05.pdf</description>
 <description>&lt;b&gt;High Luminous Efficacy 10W LED&lt;/b&gt;&lt;p&gt;
 http://www.ledengin.com/products/10wLZ/LZ4-00WW10.pdf</description>
 <gates>
-<gate name="C" symbol="LED-A" x="5.08" y="0"/>
-<gate name="D" symbol="LED-A" x="15.24" y="0"/>
-<gate name="A" symbol="LED-A" x="-15.24" y="0"/>
-<gate name="B" symbol="LED-A" x="-5.08" y="0" addlevel="request"/>
+<gate name="C" symbol="LED-A" x="5.08" y="0" addlevel="always"/>
+<gate name="D" symbol="LED-A" x="15.24" y="0" addlevel="always"/>
+<gate name="A" symbol="LED-A" x="-15.24" y="0" addlevel="always"/>
+<gate name="B" symbol="LED-A" x="-5.08" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="LZ4-00WW10">
@@ -10229,6 +10327,25 @@ Lumileds 5630 Datasheet DS201 20130228 ©2013 Philips Lumileds Lighting Company.
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1@1 1@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PC56H19_V0" prefix="LED">
+<description>&lt;b&gt;Lextar&lt;/b&gt; white SMD LED&lt;p&gt;
+Source: PC56H19_20150317.pdf&lt;br&gt;
+www.lextar.com</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PC56H19_V0">
+<connects>
+<connect gate="G$1" pin="A" pad="2 4"/>
+<connect gate="G$1" pin="C" pad="1 3"/>
 </connects>
 <technologies>
 <technology name=""/>
