@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7822,26 +7822,32 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <wire x1="193.04" y1="86.36" x2="198.12" y2="86.36" width="0.3048" layer="94"/>
 <wire x1="193.04" y1="86.36" x2="182.88" y2="86.36" width="0.3048" layer="94" curve="-180"/>
 <text x="91.44" y="165.1" size="1.778" layer="91">O2 RX regulator</text>
-<text x="35.56" y="83.82" size="1.778" layer="91">4+4+2 connector</text>
-<text x="20.32" y="165.1" size="1.778" layer="91">Temp Humidity connector</text>
+<text x="30.48" y="88.9" size="1.778" layer="91">O2 sensor 4pins</text>
+<text x="30.48" y="165.1" size="1.778" layer="91">Temp Humidity connector</text>
 <text x="226.06" y="162.56" size="1.778" layer="91">Lipo connector</text>
-<text x="144.78" y="162.56" size="1.778" layer="91">PowerBoost 500</text>
+<text x="144.78" y="165.1" size="1.778" layer="91">PowerBoost 500</text>
 <text x="180.34" y="88.9" size="1.778" layer="91">Arduino Nano</text>
 <text x="96.52" y="88.9" size="1.778" layer="91">Arduino connector</text>
+<text x="53.34" y="45.72" size="1.778" layer="91" rot="R90">Pump 2pins</text>
+<text x="53.34" y="63.5" size="1.778" layer="91" rot="R90">CO2 sensor 4pins</text>
+<text x="193.04" y="165.1" size="1.778" layer="91">SIM800L</text>
 </plain>
 <instances>
 <instance part="PIC" gate="G$1" x="96.52" y="121.92"/>
 <instance part="R2" gate="G$1" x="132.08" y="129.54"/>
 <instance part="R3" gate="G$1" x="124.46" y="121.92" rot="R90"/>
 <instance part="U$8" gate="G$1" x="124.46" y="111.76"/>
-<instance part="JP4" gate="A" x="154.94" y="160.02" rot="R90"/>
+<instance part="JP4" gate="A" x="154.94" y="162.56" rot="R90"/>
 <instance part="J1" gate="G$1" x="175.26" y="66.04" rot="MR0"/>
 <instance part="J2" gate="G$1" x="200.66" y="66.04"/>
-<instance part="DHT22" gate="1" x="17.78" y="152.4"/>
-<instance part="R1" gate="G$1" x="48.26" y="152.4"/>
+<instance part="DHT22" gate="1" x="27.94" y="152.4"/>
+<instance part="R1" gate="G$1" x="58.42" y="152.4"/>
 <instance part="SUPPLY3" gate="GND" x="99.06" y="139.7"/>
 <instance part="C3" gate="G$1" x="111.76" y="152.4"/>
-<instance part="C4" gate="G$1" x="86.36" y="152.4"/>
+<instance part="C4" gate="G$1" x="86.36" y="152.4" smashed="yes">
+<attribute name="NAME" x="82.296" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="79.756" y="148.209" size="1.778" layer="96"/>
+</instance>
 <instance part="O2" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
@@ -7850,7 +7856,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <instance part="J3" gate="G$1" x="101.6" y="66.04" rot="MR0"/>
 <instance part="J4" gate="G$1" x="109.22" y="66.04"/>
 <instance part="D" gate="1" x="165.1" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="170.18" y="123.9774" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="167.64" y="122.4026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="167.64" y="124.6886" size="1.778" layer="96"/>
 </instance>
 <instance part="TPUMP" gate="G$1" x="162.56" y="114.3" smashed="yes">
@@ -7862,7 +7868,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <attribute name="VALUE" x="182.88" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="CCO2" gate="G$1" x="187.96" y="124.46" smashed="yes">
-<attribute name="NAME" x="188.976" y="125.095" size="1.778" layer="95"/>
+<attribute name="NAME" x="191.516" y="125.095" size="1.778" layer="95"/>
 <attribute name="VALUE" x="181.356" y="125.349" size="1.778" layer="96"/>
 </instance>
 <instance part="CPUMP" gate="G$1" x="157.48" y="124.46" smashed="yes">
@@ -7889,8 +7895,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <instance part="JP3" gate="A" x="200.66" y="162.56" rot="R90"/>
 <instance part="JP1" gate="G$1" x="223.52" y="154.94"/>
 <instance part="IC1" gate="G$1" x="99.06" y="154.94"/>
-<instance part="JP2" gate="G$1" x="50.8" y="68.58"/>
-<instance part="JP5" gate="G$1" x="50.8" y="45.72"/>
+<instance part="JP2" gate="G$1" x="45.72" y="73.66"/>
+<instance part="JP5" gate="G$1" x="45.72" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -7936,19 +7942,19 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <wire x1="124.46" y1="114.3" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="137.16" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
-<label x="149.86" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="149.86" y1="139.7" x2="149.86" y2="160.02" width="0.1524" layer="91"/>
+<label x="149.86" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="2"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="157.48" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
-<label x="157.48" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="157.48" y1="160.02" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
+<label x="157.48" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="5"/>
 </segment>
 <segment>
 <pinref part="DHT22" gate="1" pin="1"/>
-<wire x1="25.4" y1="147.32" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
-<label x="27.94" y="147.32" size="1.778" layer="95"/>
+<wire x1="35.56" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+<label x="38.1" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="241.3" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
@@ -7978,8 +7984,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <junction x="187.96" y="109.22"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<label x="35.56" y="68.58" size="1.778" layer="95"/>
+<wire x1="43.18" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<label x="30.48" y="73.66" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -8027,20 +8033,20 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <label x="187.96" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<label x="35.56" y="66.04" size="1.778" layer="95"/>
+<wire x1="43.18" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="30.48" y="71.12" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="DHT22" gate="1" pin="4"/>
-<label x="27.94" y="154.94" size="1.778" layer="95"/>
-<wire x1="25.4" y1="154.94" x2="53.34" y2="154.94" width="0.1524" layer="91"/>
+<label x="38.1" y="154.94" size="1.778" layer="95"/>
+<wire x1="35.56" y1="154.94" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="154.94" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="154.94" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="157.48" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
-<label x="160.02" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="160.02" y1="160.02" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
+<label x="160.02" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="6"/>
 </segment>
 <segment>
@@ -8049,8 +8055,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <label x="119.38" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
-<label x="35.56" y="76.2" size="1.778" layer="95"/>
+<wire x1="43.18" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<label x="30.48" y="81.28" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -8092,14 +8098,14 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <junction x="83.82" y="124.46"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="157.48" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
-<label x="147.32" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="147.32" y1="160.02" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="147.32" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
-<label x="248.92" y="55.88" size="1.778" layer="95"/>
+<wire x1="238.76" y1="55.88" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
+<label x="241.3" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LBO" class="0">
@@ -8109,8 +8115,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <label x="106.68" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="157.48" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<label x="154.94" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="154.94" y1="160.02" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<label x="154.94" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="4"/>
 </segment>
 </net>
@@ -8190,8 +8196,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
-<label x="35.56" y="73.66" size="1.778" layer="95"/>
+<wire x1="43.18" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<label x="30.48" y="78.74" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -8258,8 +8264,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <pinref part="J1" gate="G$1" pin="11"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
-<label x="35.56" y="63.5" size="1.778" layer="95"/>
+<wire x1="43.18" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<label x="30.48" y="68.58" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 <segment>
@@ -8275,8 +8281,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <pinref part="J1" gate="G$1" pin="12"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
-<label x="35.56" y="60.96" size="1.778" layer="95"/>
+<wire x1="43.18" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<label x="30.48" y="66.04" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="7"/>
 </segment>
 <segment>
@@ -8447,8 +8453,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <net name="D12" class="0">
 <segment>
 <pinref part="DHT22" gate="1" pin="3"/>
-<wire x1="25.4" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<label x="27.94" y="152.4" size="1.778" layer="95"/>
+<wire x1="35.56" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
+<label x="38.1" y="152.4" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -8473,15 +8479,15 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <junction x="111.76" y="157.48"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
-<label x="35.56" y="71.12" size="1.778" layer="95"/>
+<wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<label x="30.48" y="76.2" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="CGND" class="0">
 <segment>
-<wire x1="48.26" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
-<label x="35.56" y="58.42" size="1.778" layer="95"/>
+<wire x1="43.18" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<label x="30.48" y="63.5" size="1.778" layer="95"/>
 <pinref part="JP2" gate="G$1" pin="8"/>
 </segment>
 <segment>
@@ -8494,8 +8500,8 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 </net>
 <net name="PGND" class="0">
 <segment>
-<wire x1="48.26" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
-<label x="35.56" y="45.72" size="1.778" layer="95"/>
+<wire x1="43.18" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="30.48" y="50.8" size="1.778" layer="95"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -8534,7 +8540,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 </segment>
 <segment>
 <pinref part="CPUMP" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="129.54" x2="165.1" y2="127" width="0.1524" layer="91"/>
 <pinref part="D" gate="1" pin="C"/>
 <junction x="165.1" y="127"/>
 <wire x1="165.1" y1="127" x2="157.48" y2="127" width="0.1524" layer="91"/>
@@ -8547,12 +8553,12 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="63.5" x2="246.38" y2="63.5" width="0.1524" layer="91"/>
-<label x="246.38" y="63.5" size="1.778" layer="95"/>
+<wire x1="238.76" y1="63.5" x2="241.3" y2="63.5" width="0.1524" layer="91"/>
+<label x="241.3" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
-<label x="35.56" y="48.26" size="1.778" layer="95"/>
+<wire x1="43.18" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<label x="30.48" y="53.34" size="1.778" layer="95"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -8574,21 +8580,17 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <wire x1="35.56" y1="119.38" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
 <label x="25.4" y="119.38" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="RXL3.7" class="0">
 <segment>
 <wire x1="200.66" y1="160.02" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
 <label x="200.66" y="139.7" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP3" gate="A" pin="4"/>
 </segment>
+</net>
+<net name="RXL3.7" class="0">
 <segment>
 <pinref part="JP8" gate="A" pin="2"/>
 <wire x1="35.56" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
 <label x="25.4" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP8" gate="A" pin="6"/>
-<wire x1="35.56" y1="106.68" x2="25.4" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="198.12" y1="160.02" x2="198.12" y2="139.7" width="0.1524" layer="91"/>
@@ -8623,7 +8625,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <pinref part="TSIM" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="119.38" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-<label x="205.74" y="119.38" size="1.778" layer="95" rot="R90"/>
+<label x="205.74" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -8633,14 +8635,20 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <label x="106.68" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="157.48" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
-<label x="152.4" y="142.24" size="1.778" layer="95" rot="R90"/>
+<wire x1="152.4" y1="160.02" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
+<label x="152.4" y="144.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP4" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="TSIM" gate="G$1" pin="B"/>
 <wire x1="200.66" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
 <label x="198.12" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP8" gate="A" pin="6"/>
+<wire x1="35.56" y1="106.68" x2="25.4" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

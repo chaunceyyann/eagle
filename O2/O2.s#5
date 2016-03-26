@@ -7810,7 +7810,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <part name="JP3" library="adafruit" deviceset="PINHD-1X6" device="CB"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 <part name="IC1" library="national-semiconductor" deviceset="LM2936?*" device="Z" technology="-3.3" value="L4931"/>
-<part name="O2______CO2" library="adafruit" deviceset="PINHD-1X8" device="BIG"/>
+<part name="JP2" library="adafruit" deviceset="PINHD-1X8" device="BIG"/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
@@ -7868,7 +7868,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <attribute name="VALUE" x="182.88" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="CCO2" gate="G$1" x="187.96" y="124.46" smashed="yes">
-<attribute name="NAME" x="191.516" y="125.095" size="1.778" layer="95"/>
+<attribute name="NAME" x="188.976" y="125.095" size="1.778" layer="95"/>
 <attribute name="VALUE" x="181.356" y="125.349" size="1.778" layer="96"/>
 </instance>
 <instance part="CPUMP" gate="G$1" x="157.48" y="124.46" smashed="yes">
@@ -7895,7 +7895,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <instance part="JP3" gate="A" x="200.66" y="162.56" rot="R90"/>
 <instance part="JP1" gate="G$1" x="223.52" y="154.94"/>
 <instance part="IC1" gate="G$1" x="99.06" y="154.94"/>
-<instance part="O2______CO2" gate="G$1" x="45.72" y="73.66"/>
+<instance part="JP2" gate="G$1" x="45.72" y="73.66"/>
 <instance part="JP5" gate="G$1" x="45.72" y="50.8"/>
 </instances>
 <busses>
@@ -7986,7 +7986,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <label x="30.48" y="73.66" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="4"/>
+<pinref part="JP2" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="CVBAT" gate="G$1" pin="2"/>
@@ -8035,7 +8035,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="30.48" y="71.12" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="5"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="DHT22" gate="1" pin="4"/>
@@ -8057,7 +8057,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 <label x="30.48" y="81.28" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="A" pin="3"/>
@@ -8198,7 +8198,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
 <label x="30.48" y="78.74" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
@@ -8266,7 +8266,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <label x="30.48" y="68.58" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="6"/>
+<pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
@@ -8283,7 +8283,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <label x="30.48" y="66.04" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="7"/>
+<pinref part="JP2" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
@@ -8481,14 +8481,14 @@ Source: &lt;a href="http://www.national.com/ds/LM/LM2936.pdf"&gt; Data sheet&lt;
 <segment>
 <wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
 <label x="30.48" y="76.2" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="3"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="CGND" class="0">
 <segment>
 <wire x1="43.18" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
 <label x="30.48" y="63.5" size="1.778" layer="95"/>
-<pinref part="O2______CO2" gate="G$1" pin="8"/>
+<pinref part="JP2" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="CCO2" gate="G$1" pin="2"/>

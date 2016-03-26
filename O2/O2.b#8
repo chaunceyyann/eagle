@@ -3224,6 +3224,12 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="22.86" x2="34.29" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
+<polygon width="0.254" layer="16">
+<vertex x="-1.905" y="76.708"/>
+<vertex x="-1.905" y="-1.905"/>
+<vertex x="90.805" y="-1.27"/>
+<vertex x="90.805" y="76.708"/>
+</polygon>
 <contactref element="PIC" pad="8"/>
 <contactref element="R3" pad="1"/>
 <contactref element="JP4" pad="2"/>
@@ -3487,13 +3493,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="TXL3.7">
 <contactref element="JP8" pad="1"/>
-<contactref element="JP3" pad="4"/>
-<wire x1="23.876" y1="49.276" x2="31.75" y2="42.418" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXL3.7">
 <contactref element="JP8" pad="2"/>
+<contactref element="JP8" pad="6"/>
+<contactref element="JP3" pad="4"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="21.336" y1="49.276" x2="34.29" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="42.418" x2="44.45" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="23.876" y1="49.276" x2="34.29" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="21.336" y1="49.276" x2="23.876" y2="49.276" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="JP7" pad="5"/>
@@ -3515,9 +3523,6 @@ design rules under a new name.</description>
 <contactref element="TSIM" pad="B"/>
 <wire x1="60.96" y1="57.15" x2="80.645" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="41.275" y1="59.563" x2="60.96" y2="57.15" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<contactref element="JP8" pad="6"/>
 </signal>
 </signals>
 <errors>

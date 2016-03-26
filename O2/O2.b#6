@@ -3224,6 +3224,12 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="22.86" x2="34.29" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
+<polygon width="0.254" layer="16">
+<vertex x="-3.175" y="77.216"/>
+<vertex x="-3.937" y="-1.397"/>
+<vertex x="90.805" y="-1.27"/>
+<vertex x="90.805" y="76.708"/>
+</polygon>
 <contactref element="PIC" pad="8"/>
 <contactref element="R3" pad="1"/>
 <contactref element="JP4" pad="2"/>
